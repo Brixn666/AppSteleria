@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSteleria.MainPage" BackgroundImageSource="Pasteleria2.jpg">
+    <StackLayout Margin="20" BackgroundColor="#262626">
+        <Label Text="Login!"            HorizontalOptions="Center"  VerticalOptions="CenterAndExpand"/>
+        <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="White" Margin="50,10"/>
+        <Entry Placeholder="Usuario"    x:Name="txtUsua"    Margin="30,0"/>
+        <Entry Placeholder="Contraseña" x:Name="txtCont"    IsPassword="True" Margin="30,0"/>
+        <Button Text="Ingresar"         x:Name="btnIngr"    Clicked="btnIngr_Clicked" Margin="30,10,30,10" BackgroundColor="Gray"/>
+    </StackLayout>
+</ContentPage>

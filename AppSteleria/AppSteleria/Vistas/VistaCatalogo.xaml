@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSteleria.Vistas.VistaCatalogo" Title="Catalogo">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="20" BackgroundColor="#262626">
+            <Button Text="Llamar Catalogos" x:Name="BtnCall" Clicked="BtnCall_Clicked"  BackgroundColor="Gray" Margin="30,10,30,10"/>
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="White" Margin="50,10"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300"/>
+                </Grid.RowDefinitions>
+                <ScrollView>
+                    <ListView x:Name="lstView" Grid.Row="0" BackgroundColor="Black" Margin="30,10,30,10"/>
+                </ScrollView>
+            </Grid>
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="White" Margin="50,10"/>
+            <Button Text="Actualizar"   x:Name="btnActualizar" Clicked="btnActualizar_Clicked"  Margin="30,5,30,5" BackgroundColor="Gray"/>
+            <Button Text="Borrar"       x:Name="btnBorrar"     Clicked="btnBorrar_Clicked"      Margin="30,5,30,5" BackgroundColor="Gray"/>
+            <Button Text="Editar"       x:Name="btnEditar"     Clicked="btnEditar_Clicked"      Margin="30,5,30,5" BackgroundColor="Gray"/>
+            <StackLayout Margin="20" BackgroundColor="#262626" x:Name="Conte">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="White" Margin="50,10" Grid.Column="0"/>
+                    <Label Text="Agregar" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                    <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="White" Margin="50,10" Grid.Column="2"/>
+                </Grid>
+                <Entry Placeholder="ID"                         x:Name="txtID"/>
+                <Entry Placeholder="Nombre del pastel"          x:Name="txtNombrePastel"/>
+                <Entry Placeholder="Descripcion"                x:Name="txtDescripcion"/>
+                <Entry Placeholder="ID del producto"            x:Name="txtIDPrdo"/>
+                <Button Text="Agregar"      x:Name="btnAgregar"  Clicked="btnAgregar_Clicked"  Margin="30,5,30,5" BackgroundColor="Gray"/>
+                <Button Text="Ocultar" x:Name="Ocultar1" Clicked="Ocultar1_Clicked"  Margin="30,5,30,5" BackgroundColor="Gray"/>
+            </StackLayout>
+                <StackLayout Margin="20" BackgroundColor="#262626" x:Name="Conte1">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="White" Margin="50,10" Grid.Column="0"/>
+                        <Label Text="Editar" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                        <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="White" Margin="50,10" Grid.Column="2"/>
+                    </Grid>
+                    <Entry Placeholder="ID"                         x:Name="txtID2"/>
+                    <Entry Placeholder="Nombre del pastel"          x:Name="txtNombrePastel2"/>
+                    <Entry Placeholder="Descripcion"                x:Name="txtDescripcion2"/>
+                    <Entry Placeholder="ID del producto"            x:Name="txtIDPrdo2"/>
+                    <Button Text="Editar"      x:Name="btnEdit" Clicked="btnEdit_Clicked"    Margin="30,5,30,5" BackgroundColor="Gray"/>
+                    <Button Text="Ocultar" x:Name="Ocultar3" Clicked="Ocultar3_Clicked"  Margin="30,5,30,5" BackgroundColor="Gray"/>
+                </StackLayout>
+                <StackLayout Margin="20" BackgroundColor="#262626" x:Name="Conte2">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="White" Margin="50,10" Grid.Column="0"/>
+                        <Label Text="Eliminar" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                        <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="White" Margin="50,10" Grid.Column="2"/>
+                    </Grid>
+                    <Entry Placeholder="ID"                     x:Name="txtID3"/>
+                    <Button Text="Eliminar" x:Name="btnDelete"  Clicked="btnDelete_Clicked"     Margin="30,5,30,5" BackgroundColor="Gray"/>
+                    <Button Text="Ocultar"  x:Name="Ocultar2"   Clicked="Ocultar2_Clicked"      Margin="30,5,30,5" BackgroundColor="Gray"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

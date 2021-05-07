@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSteleria.Vistas.Menu" Title="Menú" BackgroundImageSource="Pasteleria1.jpg">
+    <ContentPage.Content>
+        <StackLayout Margin="20" BackgroundColor="#262626" VerticalOptions="Center">
+            <Label Text="Bienvenido" HorizontalOptions="Center"  VerticalOptions="CenterAndExpand" Margin="10"/>
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="White" Margin="50,10"/>
+            <Button Text="Categorias"   Margin="30,10,30,10"   x:Name="btnCatego"  Clicked="btnCatego_Clicked"      BackgroundColor="Gray"/>
+            <Button Text="Productos"    Margin="30,10,30,10"   x:Name="btnProduc"  Clicked="btnProduc_Clicked"      BackgroundColor="Gray"/>
+            <Button Text="Clientes"     Margin="30,10,30,10"   x:Name="btnClient"  Clicked="btnClient_Clicked"      BackgroundColor="Gray"/>
+            <Button Text="Pedidos"      Margin="30,10,30,10"   x:Name="btnPedid"   Clicked="btnPedid_Clicked"       BackgroundColor="Gray"/>
+            <Button Text="Catalogo"     Margin="30,10,30,10"   x:Name="btnCatalo"  Clicked="btnCatalo_Clicked"      BackgroundColor="Gray"/>
+            <Button Text="Usuarios"     Margin="30,10,30,10"   x:Name="btnUsuario" Clicked="btnUsuario_Clicked"     BackgroundColor="Gray"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
